@@ -1,3 +1,5 @@
+import webbrowser
+webbrowser.open("http://localhost:8501")
 import streamlit as st
 import sqlite3
 import os
@@ -270,4 +272,5 @@ else:
         data=df_export.to_csv(index=False, encoding="utf-8-sig"),
         file_name=filename,
         mime="text/csv"
+
     )
